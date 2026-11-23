@@ -4,5 +4,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY app.py .
-EXPOSE 5000
+EXPOSE 9090
 CMD ["python3", "app.py"]
